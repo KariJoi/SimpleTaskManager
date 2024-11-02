@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="task-manager">
+        <h1>Task Manager</h1>
+        
+        <!-- Task Input Section -->
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        
+        <!-- Task List Section -->
+        <ul id="taskList"></ul>
+        
+        <!-- Notes Section -->
+        <div class="notes-section">
+            <h2>Notes</h2>
+            
+            <!-- Daily Notes -->
+            <div class="daily-notes">
+                <h3>Daily Notes</h3>
+                <input type="date" id="daySelect">
+                <textarea id="dailyNotesInput" placeholder="Enter daily notes..."></textarea>
+                <button id="saveDailyNotesBtn">Save Daily Notes</button>
+                <button id="shareDailyNotesBtn">Share Daily Notes</button>
+                <div id="dailyNotesDisplay"></div>
+            </div>
+
+            <!-- Weekly Notes -->
+            <div class="weekly-notes">
+                <h3>Weekly Notes</h3>
+                <input type="week" id="weekSelect">
+                <textarea id="weeklyNotesInput" placeholder="Enter weekly notes..."></textarea>
+                <button id="saveWeeklyNotesBtn">Save Weekly Notes</button>
+                <div id="weeklyNotesDisplay"></div>
+            </div>
+
+            <!-- Monthly Notes -->
+            <div class="monthly-notes">
+                <h3>Monthly Notes</h3>
+                <input type="month" id="monthSelect">
+                <textarea id="monthlyNotesInput" placeholder="Enter monthly notes..."></textarea>
+                <button id="saveMonthlyNotesBtn">Save Monthly Notes</button>
+                <div id="monthlyNotesDisplay"></div>
+            </div>
+
+            <!-- Yearly Notes -->
+            <div class="yearly-notes">
+                <h3>Yearly Notes</h3>
+                <input type="number" id="yearSelect" placeholder="Enter year (e.g., 2024)">
+                <textarea id="yearlyNotesInput" placeholder="Enter yearly notes..."></textarea>
+                <button id="saveYearlyNotesBtn">Save Yearly Notes</button>
+                <div id="yearlyNotesDisplay"></div>
+            </div>
+        </div>
+
+        <!-- Notification Display -->
+        <div id="notification" class="notification"></div>
+    </div>
+</body>
+</html>
